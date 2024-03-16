@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+
+<body>
+    <h2>Math Object in JS</h2>
+    <script>
+        // Math Obj
+        let m = Math;
+        console.log(m);
+
+        // Constants in Math Obj
+        console.log('The value of PI is ' + Math.PI);
+        console.log('The value of e is ' + Math.E);
+        console.log('The value of SQRT2 is ' + Math.SQRT2);
+        console.log('The value of LOG10E is ' + Math.LOG10E);
+
+        // Function in Math Obj
+        let a = 12.3;
+        let b = 15.6;
+
+        console.log('the value of a and b are a =', a, ', b = ', b);
+        console.log('the value of rounded a and b are a =', Math.round(a), ', b =', Math.round(b));
+        console.log('the value of 2 raised to the power 5 =', Math.pow(2, 5));
+        console.log('square root of 36 =', Math.sqrt(36));
+
+        // Ceil and Floor
+        console.log('5.4 rounder up to nearest integer =', Math.ceil(5.4));
+        console.log('5.4 rounder down to nearest integer =', Math.floor(5.4));
+
+        // Absolute function
+        console.log('Absolute value of 3 =', Math.abs(3));
+        console.log('Absolute value of -3 =', Math.abs(-3));
+
+        // Trigonometric function
+        console.log('Value of sin(PI/2) =', Math.sin(Math.PI / 2));
+        console.log('Value of cos(PI/2) =', Math.cos(Math.PI / 2));
+        console.log('Value of tan(PI/4) =', Math.tan(Math.PI / 4));
+
+        // Min and Max function
+        console.log('Minimum value of 9,23,1 =', Math.min(9, 32, 1));
+        console.log('Maxmimum value of 9,23,1 =', Math.max(9, 32, 1));
+
+        // Generating a random number
+        let generatedNumber = Math.random();
+        console.log('The random number =', generatedNumber);
+
+        // Generating a random number between a and b
+        // let num_btw_a_and_b = a + (b - a)*Math.random()
+        let generatedNumber_1_100 = 0 + (100 - 0) * Math.random();
+        console.log('The random number =', generatedNumber_1_100);
+
+        let generatedNumber_30_50 = 30 + (50 - 30) * Math.random();
+        console.log('The random number =', generatedNumber_30_50);
+
+
+    </script>
+</body>
+
+</html>

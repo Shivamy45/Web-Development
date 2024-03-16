@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Background</title>
+    <style>
+        #firstPara {
+            background-color: red;
+            height: 90px;
+            width: 400px;
+            border-radius: 8px;
+            border: 5px solid yellow;
+            /* this or below 3 lines */
+            /* border-width: 5px;
+    border-color: yellow;
+    border-style: solid; */
+        }
+
+        #secondPara {
+            background-color: rgb(200, 100, 0);
+            height: 40px;
+            width: max-content;
+            border-top: 5px solid rgb(187, 10, 187);
+            border-right: 5px dotted green;
+            border-bottom: 5px double black;
+            border-left: 5px dashed pink;
+            border-top-right-radius: 11px;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        #thirdPara {
+            height: 525px;
+            width: 525px;
+            border: 2px solid red;
+            background-image: url('img/t19.png');
+
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+            /* background-repeat: round;    */
+            background-repeat: no-repeat;
+            /* background-position: 0 center; */
+            /* background-position: center 0; */
+            /* background-position: top center; */
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS tutorial for Borders and Background</h2>
+    <p id="firstPara">This a trial paragraph to give borders and background.</p>
+    <p id="secondPara">This a second trial paragraph to give borders and background.</p>
+    <p id="thirdPara">This a third trial paragraph to give borders and background.</p>
+</body>
+
+</html>

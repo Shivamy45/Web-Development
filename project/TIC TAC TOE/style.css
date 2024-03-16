@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto:wght@700&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(45deg, rgba(180, 85, 225, 1) 0%, rgba(141, 84, 239, 1) 100%);
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameDiv {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    width: 40vw;
+}
+
+#title h2 {
+    color: white;
+    font-size: 5rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 4px auto;
+    text-align: center;
+    word-spacing: 8px;
+}
+
+#title h3 {
+    background-color: white;
+    color: black;
+    padding: 13px;
+    font-size: 2rem;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 4px 23px;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px;
+}
+
+.cell {
+    font-size: 4rem;
+    background-color: rgb(28, 28, 29);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: rgb(56, 56, 58);
+}
+
+#result {
+    height: 0;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    font-family: "Lato", sans-serif;
+    background-color: rgb(28, 28, 29);
+    position: absolute;
+    transition: all ease-in-out 0.4s;
+}

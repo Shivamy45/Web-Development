@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Listening to events</title>
+    <style>
+        #btn {
+            padding: 5px 19px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: hsl(39, 98%, 61%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Events & Listening to events</h2>
+    <div class="container">
+        <h3>Browser events</h3>
+        <ul>
+            <li>Click</li>
+            <li>ContextMenu</li>
+            <li>MouseOver/MouseOut</li>
+            <li>MouseDown/MouseUp</li>
+            <li>MouseMove</li>
+
+            <li>Submit</li>
+            <li>Focus</li>
+
+            <li>DOMContentLoaded</li>
+            <li>TransitionEnd</li>
+        </ul>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad delectus eaque repellendus veniam qui
+            cum
+            obcaecati vero, eligendi perspiciatis culpa ut? Fugiat aliquam praesentium modi maxime accusamus voluptate
+            id eaque sequi? Facilis fugit dolorem accusantium numquam accusamus. Similique, vero molestias aut odio
+            repudiandae quo error repellendus sed autem fuga doloribus incidunt commodi consectetur optio. Quia
+            consectetur ea perferendis id sequi error quibusdam a, ad, cum libero impedit quas? Similique officiis
+            reiciendis nobis explicabo fuga odio numquam iure minus dignissimos adipisci nemo repellat, porro expedita,
+            dolor fugit repellendus dolores autem molestiae maxime qui. Unde tempore molestiae, dolore eum aliquam quas
+            rem vero dolor illo, veritatis numquam quo obcaecati, officia cumque molestias quam possimus qui ad quia
+            laborum labore at! Voluptatum hic esse cumque quam, nihil non rem molestiae! Iusto nemo saepe natus fuga
+            recusandae nam eum? Voluptatem ratione quibusdam ipsam commodi, asperiores, temporibus ipsum, quia impedit
+            velit facere assumenda labore quisquam.</p>
+        <button id="btn" onclick="hide()">Hide</button>
+    </div>
+
+    <script>
+        // let para = document.getElementById('para');
+        // para.addEventListener('mouseover', function CursorOver() {
+        //     console.log('Cursor is on para');
+        // });
+
+        // para.addEventListener('mouseout', function CursorOut() {
+        //     console.log('Cursor is outside para');
+        // });
+
+        function hide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+                btn.innerHTML = `Show`;
+            } else {
+                para.style.display = 'block';
+                btn.innerHTML = `Hide`;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

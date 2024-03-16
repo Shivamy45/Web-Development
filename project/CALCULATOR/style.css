@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto:wght@700&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(45deg, rgba(180, 85, 225, 1) 0%, rgba(141, 84, 239, 1) 100%);
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    width: 60vw;
+}
+
+#title {
+    width: 40vw;
+}
+
+#title h2 {
+    color: white;
+    font-size: 5rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 4px auto;
+    text-align: center;
+    word-spacing: 8px;
+}
+
+#title h3 {
+    background-color: white;
+    color: black;
+    padding: 13px;
+    font-size: 2rem;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 4px 23px;
+}
+
+#phone {
+    margin: auto;
+    height: 80vh;
+    width: 25vw;
+    border: 12px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 12px;
+}
+
+#screen {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    height: 20vh;
+    border-bottom: 2px solid grey;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    border-radius: 20px;
+    padding: 12px;
+    outline: none;
+    color: white;
+    overflow: hidden;
+    text-align: right;
+    cursor: text;
+}
+
+#screen:active {
+    cursor: text;
+}
+
+#input {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 60vh;
+    gap: 2px 10px;
+}
+
+.inputButton {
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    transition: all 100ms ease-in-out;
+}
+
+.operator {
+    color: #83AB03;
+}
+
+#erase {
+    color: grey;
+}
+
+#reset {
+    color: tomato;
+}
+
+#equal {
+    background-color: #83AB03;
+}
+
+.inputButton:hover {
+    background-color: rgb(20, 20, 20);
+    font-size: 1.2rem;
+}

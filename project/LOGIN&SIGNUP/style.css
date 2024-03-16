@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #4072F5;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 12px 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding: 12px 0;
+}
+
+.inputs {
+    padding: 12px 8px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    width: 320px;
+    font-family: "Lato", sans-serif;
+}
+
+#newEmail {
+    display: none;
+}
+
+#password {
+    position: relative;
+}
+
+#password i {
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    cursor: pointer;
+}
+
+#newORforgot {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+#signup {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    text-align: center;
+}
+
+.login {
+    text-align: center;
+}
+
+#signup,
+.login p,
+#signup p {
+    display: inline;
+}
+
+#newUser {
+    color: blue;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+.btn {
+    padding: 12px 0;
+    margin-bottom: 12px;
+    color: white;
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+#login {
+    background-color: #0378B9;
+}
+
+#otpbtn {
+    display: none;
+    background-color: #0378B9;
+}
+
+hr {
+    margin-bottom: 12px;
+}
+
+#fblogin {
+    background-color: #4169B1;
+}
+
+#glogin {
+    background-color: rgb(109, 104, 104);
+}
+
+#fblogin i,
+#glogin i {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    font-size: 25px;
+}
+
+#fpass,
+#idInfo,
+#newUser {
+    display: inline;
+    font-size: 0.9rem;
+    font-family: "Lato", sans-serif;
+}

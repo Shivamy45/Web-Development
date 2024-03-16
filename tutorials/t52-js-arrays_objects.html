@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects in JS</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Arrays and Objects in JS</h2>
+    </div>
+    <script>
+        let var1 = 12;
+        let var2 = 'string';
+        let var3 = true;
+        let var4 = null;
+        let var5 = undefined;
+
+        // Object
+        let employee = {
+            name: "shivam",
+            salary: 100000,
+            qualification: 'B.tech in CS',
+            "10th result": 95,
+        }
+        console.log(employee);
+
+        // Array
+        let store = [1, 2, 3, 4, 'string', undefined];
+        console.log(store);
+
+        let store2 = new Array(220, 1012, 15, 'string', null, undefined);
+        console.log(store2);
+        store2.push('this is pushed');
+        console.log(store2.length);
+        store2 = store2.sort();
+        console.log(store2);
+
+        let store3 = new Array(23);
+        store3[23] = 4;
+        console.log(store3);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in JS</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Strings in JS</h2>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ab, quod, error ea itaque rem quam
+            repellat dolorem earum quibusdam maiores? Dolorum rem tempore quisquam nisi possimus veniam molestias
+            velit?
+        </p>
+    </div>
+    <script>
+        var string = "Myself";
+        console.log(string);
+        var name = 'Shivam';
+        console.log(name);
+        var add = 'This is added';
+        console.log(string + " " + name + ". " + add);
+        var temp = `${name} is a nice person and he is learning to code`;
+        console.log(temp);
+        var len = name.length;
+        console.log(`Length of name is ${len}`);
+        console.log("Hello world\nShivam\nThis is backslashed\b");
+        var y = new String("this");
+        console.log(y);
+        document.getElementById('content').innerHTML = '<p>This is added content</p>' + 'This is also added';
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto:wght@700&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --btn: rgb(196, 120, 231);
+}
+
+#container {
+    /* background: rgb(180, 85, 225); */
+    background: linear-gradient(45deg, rgba(180, 85, 225, 1) 0%, rgba(141, 84, 239, 1) 100%);
+    height: 100vh;
+    display: flex;
+}
+
+#addTask {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title h2 {
+    color: white;
+    font-size: 5rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 4px auto;
+    text-align: center;
+    word-spacing: 8px;
+}
+
+#title h3 {
+    background-color: white;
+    color: black;
+    padding: 13px 36px;
+    font-size: 2rem;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 4px auto;
+}
+
+#listHead {
+    display: flex;
+    margin: 40px auto 10px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 13px 31px;
+    width: 60%;
+}
+
+#listHead h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.4rem;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+#addTaskBtn {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+#listHead i {
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+#taskInput {
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 23px 31px;
+    width: 60%;
+    display: none;
+}
+
+#taskInput input {
+    padding: 8px 13px;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    font-family: 'Lato', sans-serif;
+    border-radius: 3px;
+    width: 78%;
+}
+
+#addBtn {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 6px 13px;
+    margin-left: 5px;
+    border: 2px solid var(--btn);
+    border-radius: 3px;
+    background: var(--btn);
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#addBtn:hover {
+    color: var(--btn);
+    background-color: white;
+    border-color: var(--btn);
+}
+
+#listOfTask {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto 10px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 13px 31px;
+    width: 60%;
+}
+
+.task {
+    border-bottom: 1px solid black;
+    margin-bottom: 12px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.taskName {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 6px;
+    font-size: 1.2rem;
+    /* margin: auto 0; */
+}
+
+.delete {
+    background-color: none;
+    border: none;
+    position: absolute;
+    right: 10px;
+}
+
+.delete i {
+    font-size: 16px;
+    background-color: none;
+    border: none;
+    padding: 6px;
+}
+
+.delete i:hover {
+    background-color: black;
+    color: white;
+}

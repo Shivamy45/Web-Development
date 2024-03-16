@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTDOWN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="head">
+            <h2>COUNTDOWN</h2>
+        </div>
+        <div id="countdown">
+            <div id="box">
+                <div class="card">
+                    <input type="number" min="00" max="30" id="days" placeholder="00">
+                </div>
+                <div class="sep">
+                    <p class="time">:</p>
+                </div>
+                <div class="card">
+                    <input type="number" min="00" max="24" id="hours" placeholder="00">
+                </div>
+                <div class="sep">
+                    <p class="time">:</p>
+                </div>
+                <div class="card">
+                    <input type="number" min="00" max="60" id="minutes" placeholder="00">
+                </div>
+                <div class="sep">
+                    <p class="time">:</p>
+                </div>
+                <div class="card">
+                    <input type="number" min="01" max="60" id="seconds" placeholder="00">
+                </div>
+            </div>
+            <div id="type">
+                <div class="typeTime timeType">DAYS</div>
+                <div class="typeTime seperator"></div>
+                <div class="typeTime timeType">HOUR</div>
+                <div class="typeTime seperator"></div>
+                <div class="typeTime timeType">MINUTE</div>
+                <div class="typeTime seperator"></div>
+                <div class="typeTime timeType">SECONDS</div>
+            </div>
+        </div>
+        <div id="submit">
+            <button id="gotTime">SUMBIT</button>
+            <button id="reset">RESET</button>
+            <button id="pause">PAUSE</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries with CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'nav nav nav nav'
+                'section section section aside'
+                'footer footer footer footer'
+            ;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: blue;
+        }
+
+        .bdr {
+            border: 2px solid black;
+            font-size: 18px;
+            padding: 15px;
+            background-color: greenyellow;
+            color: blue;
+            font-family: 'Franklin Gothic Medium';
+        }
+
+        .bdr h2 {
+            color: red;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background: blue;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'nav'
+                    'section'
+                    'footer'
+                ;
+            }
+
+            nav a {
+                display: block;
+            }
+
+            aside {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:600px) {
+            body {
+                background: yellow;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'nav'
+                    'section'
+                    'aside'
+                    'footer'
+                ;
+            }
+        }
+
+        @media only screen and (min-width: 600px) and (max-width:900px) {
+            body {
+                background: red;
+            }
+        }
+
+        @media only screen and (min-width: 900px) and (max-width:1200px) {
+            body {
+                background: green;
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+            body {
+                background: thistle;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <a href="">Home</a>
+            <a href="">Section</a>
+            <a href="">About Us</a>
+        </nav>
+        <section class="bdr">
+            <h2>Learn with US</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptate nostrum, ipsam fugiat, quasi
+            possimus ad voluptatem officiis accusamus facere culpa nihil architecto error eius quidem aut dicta. Harum
+            natus corrupti assumenda explicabo possimus sed est ipsa, similique saepe illo animi voluptatibus nostrum ut
+            nisi recusandae excepturi ex ea consectetur nam vero cumque optio impedit quam totam! Facere assumenda
+            adipisci nemo labore. Explicabo, aspernatur in quod sapiente nihil qui voluptates labore, sequi odit
+            asperiores quae rem quia omnis doloribus pariatur tenetur. Repellat accusantium culpa corporis debitis,
+            delectus fuga aspernatur, omnis quidem nisi suscipit repudiandae rem fugit consequatur voluptatem ipsum.
+            Vel.
+        </section>
+        <aside class="bdr">
+            <h2>More Links</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis ut, optio asperiores in dolor tempora
+            sunt voluptates! Cumque nobis porro est soluta vitae unde suscipit maxime laboriosam praesentium provident.
+            Omnis placeat voluptas ex repudiandae odio deserunt quisquam aspernatur quo, deleniti delectus sapiente
+            asperiores dicta iusto molestiae doloribus laboriosam a.
+        </aside>
+        <footer class="bdr">
+            Social Media
+        </footer>
+    </div>
+</body>
+
+</html>

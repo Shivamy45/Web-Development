@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    //- <title>Using plain HTML in pug</title>
+    <title>#{title}</title>
+    style
+        include ../static/t73-74-style.css
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+    </nav>
+    <h1>This is a heading in pug</h1>
+    <p>#{content}</p>
+    //- to get content in between lines
+    <p>#{content2}</p>
+    //- enter where you want to submit the data
+    <form action="/" method='POST'>
+        <input type="text" name="user_name" placeholder="Enter your name">
+        <input type="number" name="user_age" placeholder="Enter your age">
+        <input type="email" name="user_email" placeholder="Enter your email">
+        <textarea name="user_text" id="" cols="30" rows="5" placeholder="Message here"></textarea>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>

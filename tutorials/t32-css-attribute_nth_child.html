@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute & nth child pusedo selectors</title>
+    <style>
+        .container {
+            margin: 30px 20px;
+        }
+
+        input {
+            display: block;
+            padding: 4px;
+            margin: 18px auto;
+            text-align: center;
+        }
+
+        div>ul {
+            border: 2px solid black;
+        }
+
+        .item {
+            list-style-type: square;
+        }
+
+        input[type='text'] {
+            border: 2px solid blue;
+            border-radius: 15px;
+        }
+
+        .links {
+            display: block;
+            width: fit-content;
+            margin: auto;
+        }
+
+        input[type='password'] {
+            border: 2px solid brown;
+            color: red;
+        }
+
+        a[target] {
+            color: turquoise;
+            text-decoration: none;
+            border: 2px solid turquoise;
+            display: inline-block;
+            width: 170px;
+            margin: 11px;
+            text-align: center;
+            font-size: 23px;
+        }
+
+        /* li:nth-child(3) {
+    color: brown;
+    font-weight: bold;
+    background-color: wheat;
+} */
+
+        li:nth-child(2n+0) {
+            color: rebeccapurple;
+            background-color: pink;
+        }
+
+        li:nth-child(odd) {
+            color: greenyellow;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <div class="links">
+            <!-- _blank opens link in new tab -->
+            <a href="www.google.com" target="_blank">Google</a>
+            <!-- _self opens link in current tab -->
+            <a href="www.facebook.com" target="_self">FaceBook</a>
+            <!-- <a href="www.facebook.com" target="_parent">FaceBook</a> -->
+            <!-- <a href="www.facebook.com" target="_top">FaceBook</a> -->
+        </div>
+        <ul>
+            <li class="item" id="item1">Item1</li>
+            <li class="item" id="item2">Item2</li>
+            <li class="item" id="item3">Item3</li>
+            <li class="item" id="item4">Item4</li>
+            <li class="item" id="item5">Item5</li>
+            <li class="item" id="item6">Item6</li>
+            <li class="item" id="item7">Item7</li>
+            <li class="item" id="item8">Item8</li>
+            <li class="item" id="item9">Item9</li>
+        </ul>
+    </div>
+</body>
+
+</html>

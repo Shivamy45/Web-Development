@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is form tutorial</h2>
+    <!-- enter where you want to submit the data -->
+    <form action="backend.php">
+        <div>
+            Name: <input type="text" name="user_name">
+        </div>
+        <br>
+        <div>
+            Roll no.: <input type="number" name="user_roll">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="user_email">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="user_date">
+        </div>
+        <br>
+        <div>
+            Time: <input type="time" name="user_date">
+        </div>
+        <br>
+        <div>
+            <label for="eligible">Eligible</label>
+            <!-- if we click on lable input will be invoked - to use this "for == id" -->
+            <input type="checkbox" name="user_eligibility" id="eligible">
+        </div>
+        <br>
+        <div>
+            Gender: Male<input type="radio" name="user_gender"> Female<input type="radio" name="user_gender">
+        </div>
+        <br>
+        <div>
+            Describe yourself <br>
+            <textarea name="user_text" id="" cols="30" rows="5">Description</textarea>
+        </div>
+        <br>
+        <div>
+            Accept all terms: <input type="checkbox" name="user_eligibility" checked>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="user_car" id="car">
+                <option value="None" selected>Choose one</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Lambo">Lambo</option>
+                <option value="Hyundai">Hyundai</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </div>
+    </form>
+</body>
+
+</html>

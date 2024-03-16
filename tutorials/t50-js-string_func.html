@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String function in JS</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>String functions in JS</h2>
+        </div>
+    </div>
+    <script>
+        var str = "This is a string and i am doing a coding tutorial.";
+        console.log(str);
+
+        // First occurence fo a SubString
+        var position = str.indexOf("is");
+        console.log(position);
+
+        // Last occurence of a SubString
+        position = str.lastIndexOf("a");
+        console.log(position);
+
+        // SubString from a String
+        // var substr = str.slice(0, 10);
+        var substr = str.substring(0, 10);
+        console.log(substr);
+        var substr1 = str.substr(5, 11);
+        console.log(substr1);
+        // var repstr = str.replace(str, 'this is replaced string');
+        var repstr = str.replace('This is a string', 'this is replaced string');
+        console.log(str);
+        console.log(repstr);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        var newStr = str.concat(' This is a Newly added String.');
+        console.log(newStr);
+
+        var strWithWhiteSpaces = "    This    is  a   whitespaced string";
+        console.log(strWithWhiteSpaces);
+        console.log('Below is the trimed whitespaced string');
+        console.log(strWithWhiteSpaces.trim());
+
+        var char3 = str.charAt(3);
+        console.log(char3);
+        console.log(str[2]);
+
+        // Not important
+        // var charCode3 = str.charCodeAt(3);
+        // console.log(charCode3); 
+    </script>
+</body>
+
+</html>

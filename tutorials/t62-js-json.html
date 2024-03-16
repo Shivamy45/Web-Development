@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+
+<body>
+    <h2>Working with JSON</h2>
+    <script>
+        let myJsonObj = {
+            name: 'Shivam',
+            salary: 19999,
+            food: 'Chole Bhature',
+        }
+        console.log(myJsonObj);
+
+        // to convert obj to string
+        let myJsonStr = JSON.stringify(myJsonObj);
+        console.log(myJsonStr);
+
+        // replace function
+        myJsonStr = myJsonStr.replace('Shivam', 'Ayush');
+        myJsonStr = myJsonStr.replace(19999, 29999);
+        console.log(myJsonStr);
+
+        // valid string to Obj
+        let newJsonObj = JSON.parse(myJsonStr);
+        console.log(newJsonObj);
+
+    </script>
+</body>
+
+</html>

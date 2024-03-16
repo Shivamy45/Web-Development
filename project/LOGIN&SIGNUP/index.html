@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/613fb1aaeb.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="pageInfo">Login</h2>
+        <input class="inputs" id="emailInput" type="email" placeholder="Email" required>
+        <input class="inputs" id="newEmail" type="email" placeholder="Email" required>
+        <div id="password">
+            <input class="inputs" id="passInput" type="password" placeholder="Enter your password" required>
+            <i class="fa-regular fa-eye-slash" id="show&hide" onclick="togglePass()"></i>
+        </div>
+        <div id="newORforgot">
+            <a href="#" id="fpass">Forgot password?</a>
+            <div id="signup">
+                <p id="idInfo">Didn't have an account </p>
+                <p id="newUser" onclick="signupPage()">Sign up</p>
+            </div>
+        </div>
+        <button id="login" class="btn">Login</button>
+        <button id="otpbtn" class="btn">Send OTP</button>
+        <hr />
+        <button id="fblogin" class="btn"><i class="fa-brands fa-facebook"></i>Login with Facebook</button>
+        <button id="glogin" class="btn"><i class="fa-brands fa-google"></i>Login with Google</button>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

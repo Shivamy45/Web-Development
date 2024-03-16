@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on Selectors</title>
+    <style>
+        p {
+            color: white;
+            background-color: black;
+        }
+
+        div p {
+            color: white;
+            background-color: lightslategrey;
+        }
+
+        div>p {
+            color: aqua;
+            background-color: black;
+        }
+
+        div>div>p {
+            color: aquamarine;
+            background-color: grey;
+        }
+
+        div+p {
+            color: blueviolet;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>This p is inside div-container</p>
+        <div class="row">
+            <p>This p is inside div-container -- div-row</p>
+            <ul>
+                <li>
+                    <p>This p is inside div-container -- div-row -- ul -- li</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <p>This p is outside all div with previous sibling div</p>
+    <p>This p is outside all div with recent sibling p</p>
+</body>
+
+</html>

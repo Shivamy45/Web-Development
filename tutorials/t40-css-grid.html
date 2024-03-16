@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: 2fr 3fr 1fr; */
+            /* grid-template-columns: 200px 400px auto; */
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 12px;
+        }
+
+        .item {
+            height: 90px;
+            background-color: aqua;
+            border: 2px solid salmon;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">This is Item1</div>
+        <div class="item">This is Item2</div>
+        <div class="item">This is Item3</div>
+        <div class="item">This is Item4</div>
+        <div class="item">This is Item5</div>
+        <div class="item">This is Item6</div>
+        <div class="item">This is Item7</div>
+        <div class="item">This is Item8</div>
+        <div class="item">This is Item9</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar {
+            background-color: #5c50a0;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 8px 25px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.637);
+            background-color: rgba(255, 255, 255, 0.445);
+        }
+
+        #searchButton {
+            float: right;
+            padding: 5px 48px;
+            margin: 2px 16px 0 5px;
+            border: 2px solid rgb(207, 200, 200);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is navbar tutorial</h2>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Academics</a></li>
+                <li><a href="">Contact Us</a></li>
+                <div>
+                    <input placeholder="Search" type="text" name="search" id="searchButton">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

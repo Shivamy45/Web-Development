@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo selector</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-size: 17px;
+        }
+
+        .navbar::before {
+            background: url("t26-bg.jpg") no-repeat center top/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .navigation {
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: row;
+        }
+
+        li {
+            /* border: 2px solid yellowgreen; */
+            list-style: none;
+            font-size: 15px;
+            padding: 10px 30px;
+        }
+
+        li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            border: 2px solid red;
+            border-radius: 20px;
+            margin: 30px;
+            padding: 20px;
+            height: 300px;
+            display: flex;
+            /* text-align: center; */
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        /* section::before{
+    content: "This is before content";
+} */
+
+        h1 {
+            font-family: Calibri;
+            font-size: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"><a href="">HOME</a></li>
+                <li class="item"><a href="">ABOUT</a></li>
+                <li class="item"><a href="">SERVICES</a></li>
+                <li class="item"><a href="">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <section>
+        <h1>Welcome to Shivam's world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nisi architecto quos assumenda, sunt,
+            similique provident dolor repudiandae quae perferendis asperiores laborum. Doloribus veniam aut quasi
+            adipisci! Explicabo debitis aspernatur expedita inventore nostrum autem aperiam eveniet vero possimus
+            commodi, blanditiis alias animi error quae similique sequi. Esse nihil similique natus.</p>
+        <button>Align</button>
+    </section>
+    <hr>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,600;0,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --btn-clr: #52B588;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #32383C;
+    display: grid;
+    place-items: center;
+}
+
+.box {
+    border: 2px solid #6F7379;
+    width: 550px;
+    height: 450px;
+    background-color: #1D2325;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.box>h2 {
+    font-size: 2.5rem;
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin: 12px 0;
+}
+
+.steps-container {
+    display: flex;
+    margin: 8px 0;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.steps-container>hr {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    margin-top: 16px;
+    z-index: 1;
+}
+
+#active {
+    background-color: var(--btn-clr);
+    width: 0;
+    left: 0;
+}
+
+.steps {
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+    z-index: 3;
+    background: white;
+    border-radius: 50%;
+    display: inline;
+    padding: 12px 14px;
+}
+
+.input-slide-container {
+    width: 100%;
+    display: flex;
+}
+
+scroller {
+    width: fit-content;
+    display: flex;
+    transition-duration: 0.5s;
+}
+
+.input-slide {
+    width: 550px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 12px 23px;
+    font-family: "Exo", sans-serif;
+    transition: all 1s ease;
+}
+
+#user-slide {
+    display: flex;
+}
+
+#email-slide,
+#password-slide,
+#finish-slide {
+    display: none;
+}
+
+.input-slide>h3 {
+    margin: 2px auto;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.input-slide>p {
+    margin: 0 auto 4px;
+    color: #abafb3;
+    font-size: 12px;
+}
+
+.rules>li {
+    list-style-type: disc;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+input {
+    padding: 4px 12px;
+    margin-bottom: 7px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.full-name>input {
+    margin-bottom: 7px;
+    width: 44%;
+}
+
+.button-next {
+    padding: 7px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: var(--btn-clr);
+    position: relative;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+.button-next:hover {
+    background-color: #52B566;
+}

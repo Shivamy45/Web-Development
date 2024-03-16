@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JS</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Loops in JS</h3>
+        <ul>
+            <li>For loop</li>
+            <li>ForEach loop</li>
+            <li>ForOF loop</li>
+            <li>ForIn loop</li>
+            <li>While loop</li>
+            <li>Do While loop</li>
+        </ul>
+    </div>
+    <script>
+        for (let i = 0; i < 3; i++) {
+            console.log(i);
+        }
+
+        let friends = ['shivam', 'ayush', 'divyam', 'harshit', 'akhil'];
+
+        // For loop
+        for (let index = 0; index < friends.length; index++) {
+            const element = friends[index];
+            console.log('Good Morning ' + element);
+        }
+
+        // Using modern method
+
+        // ForEach loop
+        friends.forEach(function f(element) {
+            console.log('Good Morning ' + element);
+        });
+
+        // ForOf loop
+        for (const element of friends) {
+            console.log('Good Morning ' + element);
+        }
+
+        // ForIn loop
+        let employee = {
+            name: 'shivam',
+            salary: 4000,
+            degree: 'btech'
+        }
+
+        for (const key in employee) {
+            if (Object.hasOwnProperty.call(employee, key)) {
+                const element = employee[key];
+                console.log(`the ${key} of the employee is ${element}`);
+                // console.log('the ' +  key + ' of the employee is ' + element);
+            }
+        }
+
+        // While Loop
+        let i = 0;
+        while (i < 4) {
+            console.log(i);
+            i++;
+        }
+
+        // Do While Loop
+        let j = 4;
+        do {
+            console.log(j);
+            j--;
+        } while (0 < j && j < 4);
+    </script>
+</body>
+
+</html>

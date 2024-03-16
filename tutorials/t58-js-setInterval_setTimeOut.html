@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval & setTimeOut</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>setInterval & setTimeOut in JS</h2>
+        Time: <span id="time"></span>
+    </div>
+    <script>
+        // setTimeOut -> allows to run the function once after the interval of time
+        setTimeout((name) => {
+            console.log('Good Morning ' + name);
+        }, 4000, 'Shivam');
+
+        // OR
+
+        function greet(name) {
+            console.log('Good Morning ' + name);
+        }
+        setTimeout(greet, 5000, 'harry');
+
+        // clearTimeOut -> allows to stop the function to occur
+        TimeOut = setTimeout(greet, 4000, 'ayush');
+        console.log(TimeOut);
+        clearTimeout(TimeOut);
+
+        // setInterval -> allows to run the function after the interval of time
+        setInterval((name) => {
+            console.log('Good Night ' + name);
+        }, 1000, 'divyam');
+
+        function displayTime() {
+            time = new Date();
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime, 1000);
+    </script>
+</body>
+
+</html>

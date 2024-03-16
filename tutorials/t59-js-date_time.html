@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date & Time</title>
+</head>
+
+<body>
+    <h2>Date & Time in JS</h2>
+    <p>Current Time is: <span id="time"></span></p>
+    <script>
+        let PcDate = new Date();
+        console.log(PcDate);
+
+        let startDate = new Date(2000);
+        console.log(startDate);
+
+        let ownDate = new Date("2023-08-16");
+        console.log(ownDate);
+
+        // let newDate = new Date(year, month, date, hours, minute, seconds);
+        let newDate = new Date(2022, 3, 13, 11, 22, 34);
+        console.log(newDate);
+
+        let yearFunc = newDate.getFullYear();
+        console.log(yearFunc);
+        let dateFunc = newDate.getDate();
+        console.log(dateFunc);
+        let monthFunc = newDate.getMonth();
+        console.log(monthFunc);
+
+        newDate.setDate(3);
+        console.log(newDate);
+
+        setInterval(() => {
+            time.innerHTML = Date();
+        }, 1000);
+
+    </script>
+</body>
+
+</html>

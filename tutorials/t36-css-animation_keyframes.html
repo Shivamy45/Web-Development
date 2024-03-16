@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation & Keyframes</title>
+    <style>
+        .container {
+            background: yellow;
+        }
+
+        .box1 {
+            background-color: yellowgreen;
+            width: 200px;
+            height: 200px;
+            /* animation-name: shivam; */
+            animation-duration: 0.8s;
+            /* animation-iteration-count: infinite; */
+            animation-iteration-count: 3;
+            /* animation-fill-mode: forwards; */
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in-out;
+            /* animation-delay: 3s; */
+            animation-direction: alternate;
+            /* animation-direction: alternate-reverse; */
+        }
+
+        @keyframes shivam {
+            from {
+                width: 200px;
+                height: 200px;
+            }
+
+            to {
+                width: 320px;
+                height: 400px;
+            }
+        }
+
+        .box2 {
+            background-color: red;
+            color: white;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            /* animation-name: traveldiagonal;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none; */
+
+            /* animation: name duration timing-function deley iteration -count fill-mode; */
+            animation: traveldiagonal 1s ease-in 0s 1 none;
+        }
+
+        @keyframes traveldiagonal {
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            25% {
+                top: 200px;
+                left: 0;
+            }
+
+            50% {
+                top: 200px;
+                left: 200px;
+            }
+
+            75% {
+                top: 0;
+                left: 200px;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box2">
+            This is box2
+        </div>
+        <div class="box1">
+            This is box1
+        </div>
+    </div>
+</body>
+
+</html>

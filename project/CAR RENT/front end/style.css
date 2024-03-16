@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #1a1a1a;
+    --white-font: #FFFFFF;
+    --grey-font: #A8A8A8;
+    --red-font: #E91E22;
+    --grey-icon: #333333;
+    --yellow-btn: #FED136;
+}
+
+#navbar {
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-around;
+}
+
+h2, a {
+    color: var(--white-font);
+}

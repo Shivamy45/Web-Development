@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selector & more designing</title>
+    <style>
+        .buttons {
+            padding: 7px;
+            width: 10%;
+            background-color: yellow;
+            font-family: sans-serif;
+            font-weight: bold;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 0px 10px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .btn {
+            cursor: pointer;
+            border: 2px solid black;
+            border-radius: 3px;
+            color: white;
+            background-color: rgb(51, 24, 209);
+            padding: 7px 13px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            box-sizing: border-box;
+            color: rgb(0, 0, 0);
+            background-color: rgb(181, 170, 243);
+        }
+
+        a:visited {
+            color: white;
+            background-color: black;
+        }
+
+        a:active {
+            background-color: darkblue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS tutorial for styling links and buttons</h3>
+    <form action="backend.php">
+        <div>
+            Name: <input type="text" name="user_name">
+        </div>
+        <br>
+        <div>
+            Roll no.: <input type="number" name="user_roll">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="user_email">
+        </div>
+        <br>
+        <div>
+            Gender: Male<input type="radio" name="user_gender"> Female<input type="radio" name="user_gender">
+        </div>
+        <br>
+        <div>
+            <a href="/C++/C++ questions/try.c++" class="btn">Read more...</a>
+            <button class="btn">Contact us</button>
+        </div>
+        <br>
+        <div>
+            <input class="buttons" type="submit" value="Submit">
+            <input class="buttons" type="reset">
+        </div>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+
+<body>
+    <h2>Functions in JS</h2>
+    <script>
+        function statement(name) {
+            console.log(name + ' is a good boy');
+        }
+        statement('shivam');
+        statement('ayush');
+        function sum(a, b) {
+            return a + b;
+            // This line will not execute - Unreachable code
+        }
+        console.log(sum(2, 7));
+        function isEligible(age) {
+            return age >= 18;
+        }
+        console.log(isEligible(23));
+    </script>
+</body>
+
+</html>

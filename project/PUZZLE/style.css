@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto:wght@700&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(45deg, rgba(180, 85, 225, 1) 0%, rgba(141, 84, 239, 1) 100%);
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    width: 40%;
+}
+
+#title h2 {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 4px auto;
+    text-align: center;
+}
+
+#title h3 {
+    background-color: white;
+    color: black;
+    padding: 13px;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 4px 23px;
+}
+
+#contain {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#puzzle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+    border: 1px solid white;
+    gap: 1px;
+}
+
+#start {
+    padding: 12px 20px;
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.tile {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    user-select: none;
+    background-image: url(flower.png);
+}
+
+.tile11 {
+    background-position: left top;
+}
+
+.tile12 {
+    background-position: center top;
+}
+
+.tile13 {
+    background-position: right top;
+}
+
+.tile21 {
+    background-position: left center;
+}
+
+.tile22 {
+    background-position: center center;
+}
+
+.tile23 {
+    background-position: right center;
+}
+
+.tile31 {
+    background-position: left bottom;
+}
+
+.tile32 {
+    background-position: center bottom;
+}
+
+.tile33 {
+    background: white;
+    cursor: not-allowed;
+}

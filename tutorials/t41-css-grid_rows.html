@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid rows & gaps</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: repeat(4, 2fr); */
+            grid-template-columns: 2fr 3fr 1fr 2fr;
+            grid-template-rows: 4fr 3fr 1fr;
+            grid-auto-rows: 2fr;
+            grid-gap: 1rem;
+        }
+
+        .item {
+            background-color: aqua;
+            color: red;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <box class="container">
+        <box class="item">This is Item1</box>
+        <box class="item">This is Item2</box>
+        <box class="item">This is Item3</box>
+        <box class="item">This is Item4</box>
+        <box class="item">This is Item5</box>
+        <box class="item">This is Item6</box>
+        <box class="item">This is Item7</box>
+        <box class="item">This is Item8</box>
+        <box class="item">This is Item9</box>
+        <box class="item">This is Item10</box>
+        <box class="item">This is Item11</box>
+        <box class="item">This is Item12</box>
+        <box class="item">This is Item13</box>
+        <box class="item">This is Item14</box>
+        <box class="item">This is Item15</box>
+        <box class="item">This is Item16</box>
+        <box class="item">This is Item17</box>
+        <box class="item">This is Item18</box>
+        <box class="item">This is Item19</box>
+        <box class="item">This is Item20</box>
+    </box>
+</body>
+
+</html>

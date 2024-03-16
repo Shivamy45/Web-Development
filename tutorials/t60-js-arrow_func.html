@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    <h3>Arrow Function in JS</h3>
+    <p>Date: <span id="time"></span></p>
+    <script>
+        // let greet = () => {
+        //     console.log(`This is printed using arrow function`);
+        // }
+        // greet();
+
+        // setInterval(() => {
+        //     time.innerHTML = Date();
+        // }, 1000);
+
+        // setTimeout(() => {
+        //     console.log("we are inside setTimeout");
+        // }, 2000);
+
+        // let sum = (a, b) => {
+        //     return a + b;
+        // }
+        // console.log(sum(3, 2));
+
+        // let sumFuncShort = (a, b) => a + b;
+        // console.log(sumFuncShort(4, 6));
+
+        // let oneArgShort = a => a / 2;
+        // console.log(oneArgShort(8));
+
+        // let greetShort = () => console.log(`Good Afternoon`);
+        // greetShort();
+
+        let obj1 = {
+            names: ['Shivam', 'Ayush', 'Harry'],
+            greeting: 'Good Morning',
+            greetings: ['Good Morning', 'Good Afternoon', 'Good Night'],
+            speak() {
+                this.names.forEach((student) => {
+                    console.log('hello ' + student + ', ' + this.greeting);
+                });
+            },
+            // by own to use multiple forEach
+            greets() {
+                this.greetings.forEach((greets) => {
+                    this.names.forEach((students) => {
+                        console.log('hello ' + students + ', ' + greets + '\n');
+                    })
+                });
+            },
+        }
+        obj1.speak();
+        obj1.greets();
+    </script>;
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 10px;
+            margin: 23px 10px;
+            background-color: rgb(219, 219, 219);
+            /* box-shadow: offset'x' offset'y' blur-radius spread-radius color; */
+            /* box-shadow: 7px 10px 8px 3px grey; */
+
+            /* rgba(alpha): to set color opacity */
+            box-shadow: 7px 10px 10px 3px rgba(22, 75, 52, 0.425);
+
+            /* to give more shadows */
+            /* box-shadow: 5px 5px red, 10px 10px rosybrown, 15px 15px gold; */
+        }
+
+        .card h2 {
+            color: white;
+            text-shadow: 3px 2px 3px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam soluta, fuga praesentium pariatur officia
+                deleniti nihil at quod quis fugiat excepturi, aliquam expedita laborum nostrum nesciunt consectetur iure
+                veritatis nobis.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nemo? Ullam a molestiae mollitia,
+                quos soluta laboriosam odio voluptatibus voluptate quia repellendus accusamus impedit asperiores vel
+                numquam eaque, veritatis adipisci sequi, quisquam sapiente ducimus! Modi excepturi molestiae tenetur quo
+                dolor.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eum odit eveniet saepe officia, error
+                placeat soluta ipsam non fugit!</p>
+        </div>
+    </div>
+</body>
+
+</html>

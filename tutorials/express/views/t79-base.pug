@@ -1,0 +1,27 @@
+//- layout.pug
+doctype html
+html
+    head
+        title Shivam Gym
+        block scripts
+        block style 
+    body
+        section#introSection
+            nav#navbar
+                ul
+                    div#logo
+                        img(src="../static/img/t77-icon.png" alt="logo")
+                        | GYM
+                    li #[a(href='/') Home]
+                    li #[a(href='/') About]
+                    li #[a(href='/contact') Contact]
+            div#title
+                h2 Live your life!
+                p Empower yourself to make the changes you need
+        block content
+        footer#footer 
+            ul  
+                li #[a(href='/') FaceBook]
+                li #[a(href='/') YouTube]
+                li #[a(href='/') Instagram]
+            p © 2023 Shivam India, Inc. All rights reserved.

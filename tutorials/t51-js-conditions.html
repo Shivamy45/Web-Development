@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals in JS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            background-color: rgb(255, 204, 108);
+        }
+
+        .box ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 276.38px;
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: pink;
+            list-style-type: none;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Scope, If Else, Switch in JS</h2>
+    <div class="box">
+        <ul>
+            <li class="item">Item-1</li>
+            <li class="item">Item-2</li>
+            <li class="item">Item-3</li>
+            <li class="item">Item-4</li>
+            <li class="item">Item-5</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "This is a string";
+        console.log(string1);
+        string1 = "This is new string";
+        console.log(string1);
+
+        // global var
+        let a = 5;
+        {
+            // local var
+            let a = 6;
+            console.log(a);
+        }
+        console.log(a);
+        // constant
+        const b = "this can not be changed";
+        console.log(b);
+        // If Else
+        let age = 22;
+        if (age > 18) {
+            console.log('you can drink');
+        }
+        else if (age > 60) {
+            console.log('you are old');
+        }
+        else {
+            console.log('you can drink milk');
+        }
+        // Switch
+        let persons = 4;
+        switch (persons) {
+            case 1:
+                console.log('Number of persons are 1');
+                break;
+
+            case 2:
+                console.log('Number of persons are 2');
+                break;
+
+            case 3:
+                console.log('Number of persons are 3');
+                break;
+
+            case 4:
+                console.log('Number of persons are 4');
+                break;
+
+            default:
+                console.log('Number of persons exceeded');
+                break;
+        }
+    </script>
+</body>
+
+</html>

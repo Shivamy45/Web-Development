@@ -1,0 +1,19 @@
+//- page-a.pug
+extends t79-base.pug
+
+block scripts
+    script(src='../static/index.js')
+
+block style 
+    style 
+        include ../static/t75-style.css
+
+block content
+    section#contactSection
+        h2 Contact Us 
+        form(class="myForm" action="/contact" method="post")
+            input(name="name" type="text" class='myInput' placeholder='Enter your name')
+            input(name="email" type="email" class='myInput' placeholder='Enter your email')
+            input(name="address" type="text" class='myInput' placeholder='Enter your locality')
+            input(name="concern" type="text" class='myInput' placeholder='Enter your concern')
+            button#btn Submit
