@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port = 80;
+const port = 3000;
 
 // For serving static files
 app.use('/static', express.static('static'));
@@ -14,6 +14,9 @@ app.set('views', path.join(__dirname, 'views'));
 
 // our pug demo endpoint
 app.get('/demo', (req, res) => {
+    res.status(200).render('demo', { title: 'Hey', message: 'Hello there!, this is printed using pug' });
+});
+app.get('/', (req, res) => {
     res.status(200).render('demo', { title: 'Hey', message: 'Hello there!, this is printed using pug' });
 });
 

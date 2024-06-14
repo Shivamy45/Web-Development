@@ -1,22 +1,22 @@
 const express = require("express");
-const bodyparser = require("body-parser");
+// const bodyparser = require("body-parser");
 const app = express();
 const mongoose = require("mongoose");
 const path = require("path");
-const port = 80;
+const port = 3000;
 
-mongoose.connect('mongodb://127.0.0.1:27017/DanceWeb');
+mongoose.connect("mongodb://127.0.0.1:27017/DanceWeb");
 
 // To get the input data using body-parser
-app.use(bodyparser.urlencoded({ extended: true }));
-app.use(bodyparser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // Define Mongoose Schema
 const contactSchema = new mongoose.Schema({
     name: String,
     email: String,
     address: String,
-    concern: String
+    concern: String,
 });
 
 const Contact = mongoose.model("Contact", contactSchema);
@@ -39,11 +39,14 @@ app.get("/contact", (req, res) => {
 
 app.post("/contact", (req, res) => {
     var userData = new Contact(req.body);
-    userData.save().then(() => {
-        res.send("This item has been saved to the database");
-    }).catch(() => {
-        res.status(400).send("Item was not saved yet now to the database");
-    });
+    userData
+        .save()
+        .then(() => {
+            res.send("This item has been saved to the database");
+        })
+        .catch(() => {
+            res.status(400).send("Item was not saved yet now to the database");
+        });
 });
 
 // SERVER STARTS

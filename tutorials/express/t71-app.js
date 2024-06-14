@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 80;
+const port = 3000;
 
 app.get("/home", (req, res) => {
     res.status(200).send("This is my home page of app");

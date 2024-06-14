@@ -1,6 +1,6 @@
 const http = require('http');
 const fs = require('fs');
-const port = 80;
+const port = 3000;
 const hostname = '127.0.0.1';
 
 const home = fs.readFileSync('t67-home.html')
